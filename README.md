@@ -1,24 +1,8 @@
-# README
+<h1> Evertinho Bank </h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## This is a web application planned by me, where I perform the CRUD in Ruby on Rails language
 
-Things you may want to cover:
+* To test, we have to register a User and then we can:
+Create, edit or delete a resource input/output.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+>Status: Developing
