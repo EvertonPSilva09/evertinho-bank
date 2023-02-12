@@ -1,4 +1,4 @@
-<div id="<%= dom_id transaction %>" class="p-6 rounded-lg shadow-lg bg-white mb-4 flex"> 
+<div id="<%= dom_id transaction %>" class="p-6 rounded-lg shadow-lg bg-white mb-4 flex <%= transaction.debit? ? 'font-bold text-red-700' : 'font-bold text-green-700' %>"> 
   <p class="my-5 flex-auto">
     <%= transaction.data %>
   </p>
