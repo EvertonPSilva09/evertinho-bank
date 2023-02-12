@@ -3,7 +3,7 @@ class TransactionsController < ApplicationController
 
   # GET /transactions or /transactions.json
   def index
-    @transactions = Transaction.all
+    @transactions = Transaction.order(data: :desc, created_at: :desc)
 
     @balance = Transaction.current_balance
   end

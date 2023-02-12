@@ -1,21 +1,17 @@
-<div id="<%= dom_id transaction %>">
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Data:</strong>
+<div id="<%= dom_id transaction %>" class="p-6 rounded-lg shadow-lg bg-white mb-4 flex <%= transaction.debit? ? 'font-bold text-red-700' : 'font-bold text-green-700' %>"> 
+  <p class="my-5 flex-auto">
     <%= transaction.data %>
   </p>
 
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Description:</strong>
+  <p class="my-5 text-left flex-auto ">
     <%= transaction.description %>
   </p>
 
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Value:</strong>
+  <p class="my-5 text-left flex-auto">
     <%= transaction.value %>
   </p>
 
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Category:</strong>
+  <p class="my-5 flex-auto">
     <%= transaction.category %>
   </p>
 
