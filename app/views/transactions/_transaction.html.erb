@@ -3,21 +3,16 @@
     <%= transaction.data %>
   </p>
 
-  <p class="my-5 text-left flex-auto ">
+  <p class="my-5 align-left flex-auto ">
     <%= transaction.description %>
   </p>
 
   <p class="my-5 text-left flex-auto">
-    <%= transaction.value %>
-  </p>
-
-  <p class="my-5 flex-auto">
-    <%= transaction.category %>
+    <%= number_to_currency transaction.value %>
   </p>
 
   <% if action_name != "show" %>
     <%= link_to "Show this transaction", transaction, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to 'Edit this transaction', edit_transaction_path(transaction), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
     <hr class="mt-6">
   <% end %>
 </div>
